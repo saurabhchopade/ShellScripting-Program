@@ -1,7 +1,5 @@
-
 #!/bin/bash -x
 #Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,...
-
 read -p " Enter Value Like (eg-1000) =" cash;
 
 	case $cash in
@@ -28,19 +26,17 @@ read -p " Enter Value Like (eg-1000) =" cash;
 		;;
 	10000000)
 		echo "Ten Million";
-		;;
-	
+		;;	
 	esac
 
    check=$(( $cash%10 ));
-
- 	if [ $check -eq 0 ];
+	if [ $check -eq 0 ];
 	then 
 		echo " ";
    else
 		echo "Enter Valid Cash ";
-	fi
+	fi;
 
- 
+
 
 
